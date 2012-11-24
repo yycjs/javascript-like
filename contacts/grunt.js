@@ -23,7 +23,7 @@ module.exports = function(grunt) {
             options: {
 //                module: 'amd',
 //                style: 'eqeqeq;bitwise'
-            }
+           }
         }
     });
 
