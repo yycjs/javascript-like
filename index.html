@@ -70,7 +70,7 @@
             </aside>
             
             <aside class="page_number">
-              1/9
+              1/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -84,6 +84,8 @@
             
             <header><h2>Contacts application</h2></header>
             
+            
+            <section><p><img alt="Contacts application" src="images/contacts.png" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -99,7 +101,7 @@
             </aside>
             
             <aside class="page_number">
-              2/9
+              2/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -144,7 +146,7 @@
             </aside>
             
             <aside class="page_number">
-              3/9
+              3/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -153,11 +155,30 @@
       
       <!-- slide source: readme.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h2>CoffeeScript</h2></header>
             
+            
+            <section><h3>A rubyish-pythonesque-javascriptish language that compiles to javascript. Basically it makes your code less verbose.</h3>
+<p>Functions can be created rubyishly: </p>
+<div class="highlight"><pre><span class="nx">square</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span>
+</pre></div>
+
+<p>Great features for making functions with arbitrary-length argument list:</p>
+<div class="highlight"><pre><span class="nx">awardMedals</span> <span class="o">=</span> <span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">,</span> <span class="nx">others</span><span class="p">...)</span> <span class="o">-&gt;</span>
+  <span class="c1">//do stuff with the arguments!</span>
+</pre></div>
+
+<p>Gotta love awesome pythonic list comprehensions</p>
+<div class="highlight"><pre><span class="nx">eat</span> <span class="nx">food</span> <span class="k">for</span> <span class="nx">food</span> <span class="k">in</span> <span class="p">[</span><span class="s1">&#39;toast&#39;</span><span class="p">,</span> <span class="s1">&#39;cheese&#39;</span><span class="p">,</span> <span class="s1">&#39;wine&#39;</span><span class="p">]</span>
+</pre></div>
+
+<p>Countdown:</p>
+<div class="highlight"><pre><span class="nx">countdown</span> <span class="o">=</span> <span class="p">(</span><span class="nx">num</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">10</span><span class="p">..</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -173,7 +194,44 @@
             </aside>
             
             <aside class="page_number">
-              4/9
+              4/10
+            </aside>
+            <img class="logo" src="theme/yycjs-logo.png">
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: readme.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h2>CoffeeScript</h2></header>
+            
+            
+            <section><p>Cool array slicing features</p>
+<div class="highlight"><pre><span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="nx">start</span>   <span class="o">=</span> <span class="nx">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+<p>It also has classes, inheritance and super</p>
+<p>And more... (which is my way of saying that I'm running out of time and need some more hands on this)</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="readme.md">readme.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -204,7 +262,7 @@
             </aside>
             
             <aside class="page_number">
-              5/9
+              6/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -240,7 +298,7 @@
             </aside>
             
             <aside class="page_number">
-              6/9
+              7/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -249,20 +307,21 @@
       
       <!-- slide source: readme.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h2>TypeScript Example</h2></header>
             
             
-            <section><pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;&lt;title&gt; TypeScript Greeter &lt;/title&gt;&lt;/head&gt;
-  &lt;body&gt;
-    &lt;script src='greeter.js'&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></section>
+            <section><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;</span> TypeScript Greeter <span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&#39;greeter.js&#39;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -278,7 +337,7 @@
             </aside>
             
             <aside class="page_number">
-              7/9
+              8/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -287,22 +346,23 @@
       
       <!-- slide source: readme.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h2>TypeScript Example Continued...</h2></header>
             
             
-            <section><pre><code>class Greeter {
-   constructor(public greeting: string) { }
-   greet() {
-       return "&lt;h1&gt;" + this.greeting + "&lt;/h1&gt;";
-   }
-};
-var greeter = new Greeter("Hello, world!");
-var str = greeter.greet();
-document.body.innerHTML = str;
-</code></pre></section>
+            <section><div class="highlight"><pre><span class="kr">class</span> <span class="nx">Greeter</span> <span class="p">{</span>
+   <span class="nx">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">greeting</span><span class="o">:</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+   <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="s2">&quot;&lt;h1&gt;&quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">greeting</span> <span class="o">+</span> <span class="s2">&quot;&lt;/h1&gt;&quot;</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">greeter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Greeter</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">greeter</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -318,7 +378,7 @@ document.body.innerHTML = str;
             </aside>
             
             <aside class="page_number">
-              8/9
+              9/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -356,7 +416,7 @@ document.body.innerHTML = str;
             </aside>
             
             <aside class="page_number">
-              9/9
+              10/10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -379,7 +439,7 @@ document.body.innerHTML = str;
           <footer>
             
             <aside class="page_number">
-              /9
+              /10
             </aside>
             <img class="logo" src="theme/yycjs-logo.png">
           </footer>
@@ -416,28 +476,33 @@ document.body.innerHTML = str;
         </tr>
         
         <tr id="toc-row-5" class="sub">
-          <th><a href="#slide5">Microsoft TypeScript</a></th>
+          <th><a href="#slide5">CoffeeScript</a></th>
           <td><a href="#slide5">5</a></td>
         </tr>
         
         <tr id="toc-row-6" class="sub">
-          <th><a href="#slide6">What is TypeScript?</a></th>
+          <th><a href="#slide6">Microsoft TypeScript</a></th>
           <td><a href="#slide6">6</a></td>
         </tr>
         
         <tr id="toc-row-7" class="sub">
-          <th><a href="#slide7">TypeScript Example</a></th>
+          <th><a href="#slide7">What is TypeScript?</a></th>
           <td><a href="#slide7">7</a></td>
         </tr>
         
         <tr id="toc-row-8" class="sub">
-          <th><a href="#slide8">TypeScript Example Continued...</a></th>
+          <th><a href="#slide8">TypeScript Example</a></th>
           <td><a href="#slide8">8</a></td>
         </tr>
         
         <tr id="toc-row-9" class="sub">
-          <th><a href="#slide9">TypeScript: Up and Running</a></th>
+          <th><a href="#slide9">TypeScript Example Continued...</a></th>
           <td><a href="#slide9">9</a></td>
+        </tr>
+        
+        <tr id="toc-row-10" class="sub">
+          <th><a href="#slide10">TypeScript: Up and Running</a></th>
+          <td><a href="#slide10">10</a></td>
         </tr>
         
       
