@@ -1,19 +1,19 @@
+library contacts;
+
 class Address {
   
 }
-class Contacts {
+class Contact {
   String name;
   String phone;
   String email;
   Address homeAddress;
   String image;
   
-  Contacts(this.name, this.email);
+  Contact(this.name, this.email);
   
   String toString() {
+    // '<div>{{name}}</div>'
     return "";
   }
-  
-  
-  
 }

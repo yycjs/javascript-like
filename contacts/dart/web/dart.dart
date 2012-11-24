@@ -1,9 +1,9 @@
 import 'dart:html';
+import 'contact.dart';
 
 void main() {
-  query("#text")
-    ..text = "Click me!"
-    ..on.click.add(reverseText);
+  Contact c = new Contact("Test", "test@example.com");
+  window.console.log();
 }
 
 void reverseText(Event event) {
