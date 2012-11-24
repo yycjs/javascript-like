@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'contact.dart';
 
 void main() {
   query("#text")
@@ -14,3 +15,6 @@ void reverseText(Event event) {
   }
   query("#text").text = buffer.toString();
 }
+
+Contact c = new Contact("Test", "test@example.com");
+print(c);
