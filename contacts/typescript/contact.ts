@@ -6,7 +6,7 @@ module Contacts {
     // ---------------------------------------
     export class Contact {
       private firstName;
-      private lastName;
+      private lastName : string;
       private mainPhone;
       private email;
 
@@ -29,10 +29,33 @@ module Contacts {
       // public template (): string;
     }
 
-    // Family Class
+    // Co-Worker Class
     // ---------------------------------------
 
-    export class Family extends Contact {
+    export class Coworker extends Contact {
+      private officePhone;
+      private mobilePhone;
+      private extension;
+      private officeNumber;
+
+      constructor (
+        firstName: string, lastName: string,
+        officePhone: string,
+        mobile: string,
+        email: string,
+        officeNumber?: number
+      ) {
+        super(firstName, lastName, officePhone, email);
+        this.mobilePhone = mobile;
+        this.officePhone = officePhone;
+        this.officeNumber = officeNumber;
+      };
+    }
+
+    // Friend Class
+    // ---------------------------------------
+
+    export class Friend extends Contact {
       private homePhone;
       private mobilePhone;
 
@@ -42,9 +65,24 @@ module Contacts {
         this.homePhone = home;
       };
     }
+
+    // Family Class
+    // ---------------------------------------
+
+    export class Family extends Friend {
+      private homePhone;
+      private mobilePhone;
+      private relationship;
+
+      constructor (firstName: string, lastName: string, home: string, mobile: string, email: string, relationship: string) {
+        super(firstName, lastName, home, mobile, email);
+        this.relationship = relationship;
+      };
+    }
 }
 
-var contact1 = new Contacts.Contact("Johnny", "AppleSeed", "1 (555) 555-5555", "j.appleseed@apple.com");
-var contact2 = new Contacts.Family("Jenny", "Bootstrap", "1 (555) 555-5555", "1 (555) 555-1234", "j.bootstrap@apple.com");
+// var coworker = new Contacts.Coworker("Johnny", "AppleSeed", "1 (555) 555-5555", "1 (555) 555-6789", "j.appleseed@apple.com", 5);
+// var friend = new Contacts.Friend("Jenny", "Bootstrap", "1 (555) 555-5555", "1 (555) 555-1234", "j.bootstrap@apple.com");
+// var family = new Contacts.Family("Papa", "John", "1 (666) 666-6666", "1 (666) 666-1234", "p.john@apple.com", 'father');
 
-console.log(contact1, contact2);
+// console.log(coworker, family, friend);
