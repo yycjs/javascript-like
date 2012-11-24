@@ -1,0 +1,5 @@
+library contacts;
+
+class ContactListController {
+  
+}

@@ -13,6 +13,7 @@ class Contact {
   String email;
   Address address;
   String image;
+  String type;
   
   Contact(this.name, this.email);
   
