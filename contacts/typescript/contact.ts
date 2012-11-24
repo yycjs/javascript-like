@@ -5,6 +5,7 @@ module Contacts {
     // Base Contact Class
     // ---------------------------------------
     export class Contact {
+      // TODO: give every contact a GUID so that it's easy to look them up in the contactStore
       private firstName;
       private lastName : string;
       private mainPhone;

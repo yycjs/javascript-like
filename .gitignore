@@ -2,3 +2,4 @@
 .idea
 *~
 contacts/resources/js/*.js
+contacts/typescript/*.js

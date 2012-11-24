@@ -4,6 +4,7 @@ class ContactStore {
   private contacts;
 
   constructor() {
+    // TODO: change this to a dictionary so that deletes are easy
     this.contacts = [];
   }
 
@@ -23,6 +24,8 @@ class ContactStore {
       console.log(contact);
     });
   }
+
+
 
 //  getAll() {
 //    return this.contacts;

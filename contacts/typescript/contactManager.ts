@@ -1,11 +1,12 @@
 /// <reference path="./contact.ts"/>
 /// <reference path="./contactStore.ts"/>
+/// <reference path="./jQuery.d.ts"/>
 
-declare var $:any;
+//declare var $:any;
 
 class ContactManager {
-  private contactHtml;
-  private store;
+  private contactHtml: string;
+  private store: ContactStore;
 
   constructor() {
     this.store = new ContactStore();
@@ -14,7 +15,7 @@ class ContactManager {
 
     $.ajax({
       url:'contact.html',
-      success: function(html) { cm.contactHtml = html; },
+      success: (html: string) => { cm.contactHtml = html; },
       async: false
     });
 
@@ -30,7 +31,7 @@ class ContactManager {
     this.store.save(contact);
     this.store.printAll();
 
-    var contactHtml$ = $(this.contactHtml);
+    var contactHtml$:JQuery = $(this.contactHtml);
 
     contactHtml$.find('.remove').click(function () {
       contactHtml$.remove();
@@ -38,7 +39,7 @@ class ContactManager {
 
     contactHtml$.find('[name="name"]').change(function () {
       contact.set('firstName', $(this).val());
-      console.log(contact.get('firstName'));
+      console.log(contact);
     });
 
     contactHtml$.find('[name="address"]').change(function () {
@@ -47,8 +48,8 @@ class ContactManager {
     });
 
     contactHtml$.find('[name="phone"]').change(function () {
-      contact.set('phone', $(this).val());
-      console.log(contact.get('phone'));
+      contact.set('mainPhone', $(this).val());
+      console.log(contact);
     });
 
     contactHtml$.find('[name="email"]').change(function () {
