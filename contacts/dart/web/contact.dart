@@ -3,7 +3,10 @@ library contacts;
 import 'dart:html';
 
 class Address {
-  
+  String address;
+  String toString() {
+    return address;
+  }
 }
 
 class Contact {

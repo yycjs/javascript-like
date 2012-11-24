@@ -96,3 +96,8 @@ h1 {
 #create .contact .remove {
 	display: none;
 }
+
+.hidden {
+  display:none;
+  visibility:hidden;
+}

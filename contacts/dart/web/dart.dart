@@ -6,5 +6,5 @@ void main() {
   Contact c = new Contact("Test", "test@example.com");
   query('#contacts ul').elements.add(c.render());
   
-  var controller = new Controller(query('#newContact'));
+  var controller = new FormController(query('#newContact'), null, query('#new-contact'));
 }
