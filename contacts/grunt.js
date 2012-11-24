@@ -10,19 +10,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-type');
 
-    // Project configuration.
     grunt.initConfig({
-//        typescript: {
-//            base: {
-//                src: ['typescript/**/*.ts'],
-//                dest: 'resources/js',
-//                options: {
-////                    module: 'amd',
-//                    target: 'es5'
-////                    base_path: 'path/to/typescript/files'
-//                }
-//            }
-//        }
         type: {
             compile: {
                 files: {
