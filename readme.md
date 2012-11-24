@@ -8,6 +8,12 @@
 
 ---
 
+## Google Dart
+
+![Dart Logo](images/dart_logo.png)
+
+---
+
 ## [Google Dart](http://www.dartlang.org)
 
 > Dart brings structure to web app engineering with a new language, libraries, and tools
@@ -27,9 +33,15 @@ To get started:
 
 ## CoffeeScript
 
+![CoffeeScript Logo](images/cofeescript_logo.jpg)
+
+---
+
+## CoffeeScript
+
 ### A rubyish-pythonesque-javascriptish language that compiles to javascript. Basically it makes your code less verbose.
 
-Functions can be created rubyishly: 
+Functions can be created rubyishly:
 
     !javascript
     square = (x) -> x * x
